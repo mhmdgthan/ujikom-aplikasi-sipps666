@@ -1,0 +1,100 @@
+/* Mobile Table Responsive CSS */
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+    
+    .table-responsive table {
+        min-width: 700px;
+        white-space: nowrap;
+        margin-bottom: 0;
+    }
+    
+    .table-responsive th,
+    .table-responsive td {
+        padding: 6px 8px;
+        font-size: 11px;
+        min-width: 80px;
+        white-space: nowrap;
+    }
+    
+    .data-table {
+        min-width: 700px;
+        width: auto;
+    }
+    
+    .data-table th,
+    .data-table td {
+        padding: 6px 8px;
+        font-size: 10px;
+        white-space: nowrap;
+        min-width: 70px;
+    }
+    
+    /* Specific for siswa dashboard tables */
+    .data-table-card .table {
+        min-width: 800px;
+    }
+    
+    .data-table-card .table th,
+    .data-table-card .table td {
+        padding: 8px 10px;
+        font-size: 11px;
+        white-space: nowrap;
+    }
+    
+    /* Scroll indicator */
+    .table-responsive::after {
+        content: "← Geser untuk melihat semua kolom →";
+        display: block;
+        text-align: center;
+        padding: 8px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        font-size: 10px;
+        font-weight: 600;
+        border-radius: 0 0 8px 8px;
+        position: sticky;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .table-responsive.scrolled::after {
+        content: "← Geser kiri/kanan untuk melihat semua →";
+    }
+}
+
+@media (max-width: 480px) {
+    .table-responsive table {
+        min-width: 600px;
+    }
+    
+    .table-responsive th,
+    .table-responsive td {
+        padding: 4px 6px;
+        font-size: 9px;
+        min-width: 60px;
+    }
+    
+    .data-table th,
+    .data-table td {
+        padding: 4px 6px;
+        font-size: 9px;
+        min-width: 60px;
+    }
+    
+    .data-table-card .table {
+        min-width: 700px;
+    }
+    
+    .data-table-card .table th,
+    .data-table-card .table td {
+        padding: 6px 8px;
+        font-size: 10px;
+    }
+}

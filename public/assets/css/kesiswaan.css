@@ -1,0 +1,189 @@
+/* ================ KESISWAAN LAYOUT CSS ================ */
+
+/* HAPUS BARIS INI - tidak perlu import admin.css */
+/* @import url('admin.css'); */
+
+/* ================ KESISWAAN SPECIFIC OVERRIDES ================ */
+
+/* Kesiswaan color scheme - TAMBAHKAN VARIABLE YANG DIBUTUHKAN */
+:root {
+    --primary: #38b2ac;
+    --primary-dark: #319795;
+    --secondary: #4fd1c7;
+    --danger: #e53e3e;    /* TAMBAHKAN */
+    --success: #38a169;   /* TAMBAHKAN */
+    --warning: #dd6b20;   /* TAMBAHKAN */
+}
+
+/* Sidebar dengan gradient kesiswaan */
+.sidebar {
+    background: linear-gradient(180deg, #38b2ac 0%, #4fd1c7 100%) !important;
+}
+
+/* Logo dan brand di sidebar */
+.sidebar-logo {
+    background: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(10px);
+}
+
+.sidebar-brand {
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+    background: none !important;
+}
+
+.sidebar-role {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* User info di sidebar */
+.sidebar-user {
+    border-bottom-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.sidebar-user-name {
+    color: white !important;
+}
+
+.sidebar-user-role {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Navigation items */
+.nav-label {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.nav-item {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.nav-item:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: white !important;
+}
+
+.nav-item.active {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Icons dalam nav item */
+.nav-item i {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.nav-item.active i {
+    color: white !important;
+}
+
+/* Stat card dengan theme kesiswaan */
+.stat-card-icon.primary { 
+    background: linear-gradient(135deg, var(--primary), var(--secondary)) !important; 
+}
+
+/* Button primary */
+.btn-primary {
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: white !important;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark) !important;
+    border-color: var(--primary-dark) !important;
+}
+
+/* Search focus */
+.topbar-search input:focus {
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 3px rgba(56, 178, 172, 0.1) !important;
+}
+
+/* Toggle button */
+.topbar-toggle:hover {
+    color: var(--primary) !important;
+}
+
+/* Content card title icons */
+.content-card-title i {
+    color: var(--primary) !important;
+}
+
+/* ================ KESISWAAN SPECIFIC COMPONENTS ================ */
+
+/* Badge kesiswaan */
+.kesiswaan-badge {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Card khusus pelanggaran dan prestasi */
+.pelanggaran-card {
+    border-left: 4px solid var(--danger) !important;
+}
+
+.prestasi-card {
+    border-left: 4px solid var(--success) !important;
+}
+
+/* Status verifikasi */
+.verification-pending {
+    background: #fef5e7 !important;
+    border: 1px solid #f6ad55 !important;
+    color: #c05621 !important;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.verification-approved {
+    background: #f0fff4 !important;
+    border: 1px solid #68d391 !important;
+    color: #2f855a !important;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.verification-rejected {
+    background: #fed7d7 !important;
+    border: 1px solid #fc8181 !important;
+    color: #c53030 !important;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+/* Override untuk stat card colors agar match dengan theme kesiswaan */
+.stat-card:nth-child(1) {
+    color: var(--primary) !important;
+}
+
+.stat-card:nth-child(1) .stat-card-icon {
+    background: linear-gradient(135deg, var(--primary), var(--secondary)) !important;
+}
+
+/* Pastikan toggle button bisa diklik */
+.topbar-toggle {
+    cursor: pointer !important;
+    position: relative;
+    z-index: 1001;
+}
+
+.topbar-toggle i {
+    pointer-events: none;
+}
+
+.topbar-toggle:hover {
+    background: #f7fafc !important;
+    color: var(--primary) !important;
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+}

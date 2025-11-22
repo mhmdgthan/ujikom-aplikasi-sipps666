@@ -1,0 +1,110 @@
+/* Import common styles */
+@import url('common-index.css');
+
+/* Siswa-specific styles */
+.student-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #e2e8f0;
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.student-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.student-name {
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.student-id {
+    font-size: 11px;
+    color: #a0aec0;
+}
+
+.badge-gender {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.badge-gender.male {
+    background: #bee3f8;
+    color: #2c5282;
+}
+
+.badge-gender.female {
+    background: #fed7e2;
+    color: #702459;
+}
+
+.filter-select {
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #4a5568;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s;
+    min-width: 150px;
+}
+
+.filter-select:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.text-muted {
+    color: #a0aec0;
+    font-size: 12px;
+}
+
+.detail-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 3px solid #e2e8f0;
+    margin-bottom: 16px;
+}
+
+.detail-photo-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+/* Responsive overrides */
+@media (max-width: 768px) {
+    .page-actions-left {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .filter-select {
+        width: 100%;
+    }
+}

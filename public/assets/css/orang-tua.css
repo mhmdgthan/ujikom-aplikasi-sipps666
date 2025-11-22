@@ -1,0 +1,73 @@
+/* ================ ORANG TUA LAYOUT CSS ================ */
+
+/* Import base admin styles */
+@import url('admin.css');
+
+/* ================ ORANG TUA SPECIFIC OVERRIDES ================ */
+
+/* Orang Tua color scheme */
+:root {
+    --primary: #d69e2e;
+    --primary-dark: #b7791f;
+    --secondary: #ecc94b;
+}
+
+.sidebar {
+    background: linear-gradient(180deg, #d69e2e 0%, #ecc94b 100%);
+}
+
+.stat-card-icon.primary { 
+    background: var(--primary); 
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+}
+
+.nav-item.active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.topbar-search input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(214, 158, 46, 0.1);
+}
+
+.sidebar-toggle:hover {
+    color: var(--primary);
+}
+
+.content-card-title i {
+    color: var(--primary);
+}
+
+/* Orang Tua specific components */
+.orang-tua-badge {
+    background: linear-gradient(135deg, #d69e2e, #ecc94b);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.anak-info-card {
+    background: linear-gradient(135deg, #d69e2e, #ecc94b);
+    color: white;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.laporan-card {
+    background: #fffbeb;
+    border: 1px solid #f6e05e;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}

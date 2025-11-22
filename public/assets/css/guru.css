@@ -1,0 +1,77 @@
+/* ================ GURU LAYOUT CSS ================ */
+
+/* Import base admin styles */
+@import url('admin.css');
+
+/* ================ GURU SPECIFIC OVERRIDES ================ */
+
+/* Guru color scheme */
+:root {
+    --primary: #ed8936;
+    --primary-dark: #dd6b20;
+    --secondary: #f6ad55;
+}
+
+.sidebar {
+    background: linear-gradient(180deg, #ed8936 0%, #f6ad55 100%);
+}
+
+.stat-card-icon.primary { 
+    background: var(--primary); 
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+}
+
+.nav-item.active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.topbar-search input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(237, 137, 54, 0.1);
+}
+
+.sidebar-toggle:hover {
+    color: var(--primary);
+}
+
+.content-card-title i {
+    color: var(--primary);
+}
+
+/* Guru specific components */
+.guru-badge {
+    background: linear-gradient(135deg, #ed8936, #f6ad55);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.kelas-card {
+    border-left: 4px solid var(--primary);
+    background: #fffaf0;
+}
+
+.siswa-list-item {
+    padding: 12px;
+    border: 1px solid #fed7aa;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    background: white;
+}
+
+.pelanggaran-form {
+    background: #fef5e7;
+    border: 1px solid #f6ad55;
+    border-radius: 8px;
+    padding: 20px;
+}

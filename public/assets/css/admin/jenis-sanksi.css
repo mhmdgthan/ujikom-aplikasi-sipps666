@@ -1,0 +1,27 @@
+@import url('common-index.css');
+
+/* Badge Kategori Sanksi */
+.badge-kategori {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.badge-kategori.ringan {
+    background: #c6f6d5;
+    color: #22543d;
+}
+
+.badge-kategori.sedang {
+    background: #feebc8;
+    color: #7c2d12;
+}
+
+.badge-kategori.berat {
+    background: #fed7d7;
+    color: #742a2a;
+}

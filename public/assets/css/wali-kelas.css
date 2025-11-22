@@ -1,0 +1,73 @@
+/* ================ WALI KELAS LAYOUT CSS ================ */
+
+/* Import base admin styles */
+@import url('admin.css');
+
+/* ================ WALI KELAS SPECIFIC OVERRIDES ================ */
+
+/* Wali Kelas color scheme */
+:root {
+    --primary: #3182ce;
+    --primary-dark: #2c5282;
+    --secondary: #63b3ed;
+}
+
+.sidebar {
+    background: linear-gradient(180deg, #3182ce 0%, #63b3ed 100%);
+}
+
+.stat-card-icon.primary { 
+    background: var(--primary); 
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+}
+
+.nav-item.active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.topbar-search input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+.sidebar-toggle:hover {
+    color: var(--primary);
+}
+
+.content-card-title i {
+    color: var(--primary);
+}
+
+/* Wali Kelas specific components */
+.wali-kelas-badge {
+    background: linear-gradient(135deg, #3182ce, #63b3ed);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.kelas-info-card {
+    background: linear-gradient(135deg, #3182ce, #63b3ed);
+    color: white;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.siswa-monitoring {
+    background: #ebf8ff;
+    border: 1px solid #90cdf4;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
