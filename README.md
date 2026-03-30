@@ -1,66 +1,158 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🏫 SIPPS 666 — Sistem Informasi Poin Pelanggaran Siswa
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<div align="center">
 
-## About Laravel
+![Laravel](https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-Backend-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**Aplikasi web untuk mengelola data pelanggaran, prestasi, dan konseling siswa secara terintegrasi.**
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Dibuat sebagai proyek Ujian Kompetensi Kejuruan (UKK) oleh **Muhammad Gathan Prayoga**  
+SMK Bakti Nusantara 666 · XII PPLG 1 · 2025
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+</div>
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 📋 Deskripsi
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+SIPPS 666 adalah aplikasi berbasis **Laravel** yang dirancang untuk membantu sekolah dalam mengelola data pelanggaran siswa secara digital, transparan, dan efisien. Sistem ini mendukung **8 role pengguna** dengan hak akses berbeda untuk proses monitoring dan pelaporan.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## ✨ Fitur Utama
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- 📊 **Dashboard** statistik real-time per role
+- 📝 **Input & Manajemen Pelanggaran** dengan bukti foto
+- 🏆 **Manajemen Prestasi** siswa (Akademik & Non-Akademik)
+- ⚖️ **Manajemen Sanksi** & Pelaksanaan Sanksi
+- 🧠 **Bimbingan Konseling (BK)** dengan laporan konseling
+- ✅ **Sistem Verifikasi** data pelanggaran oleh Kesiswaan
+- 📄 **Export Laporan** ke PDF dan Excel
+- 💾 **Backup Database** langsung dari dashboard Admin
+- 🔍 **Filter & Pencarian Canggih** berdasarkan kelas, tanggal, kategori
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## 👥 Role Pengguna
 
-## Contributing
+| Role | Akses |
+|------|-------|
+| 👑 Admin | Kelola semua data master, input pelanggaran, monitoring, laporan |
+| 🏫 Kepala Sekolah | Monitoring & laporan pelanggaran seluruh sekolah |
+| 📋 Kesiswaan | Input & verifikasi pelanggaran, monitoring siswa |
+| 🧠 Guru BK | Konseling dan pengelolaan data pelanggaran siswa |
+| 🏷️ Wali Kelas | Melihat & mencatat pelanggaran siswa kelasnya |
+| 👨‍🏫 Guru | Input pelanggaran saat piket, laporan harian |
+| 👨‍👩‍👦 Orang Tua | Melihat pelanggaran & prestasi anak |
+| 🎓 Siswa | Melihat riwayat pelanggaran & profil pribadi |
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 🛠️ Teknologi
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+| Kategori | Teknologi |
+|----------|-----------|
+| Framework | Laravel 11.x |
+| Database | MySQL |
+| Frontend | Bootstrap 5.3 |
+| JavaScript | jQuery 3.6 |
+| PDF Generator | DomPDF |
+| Icons | Font Awesome 6.0 |
+| Charts | Chart.js |
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 🚀 Cara Install & Menjalankan
 
-## License
+```bash
+# 1. Clone repository
+git clone https://github.com/mhmdgthan/ujikomaplikasi-sipps666.git
+cd ujikomaplikasi-sipps666
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# 2. Install dependencies
+composer install
+npm install
+
+# 3. Salin file environment
+cp .env.example .env
+
+# 4. Generate app key
+php artisan key:generate
+
+# 5. Sesuaikan konfigurasi database di file .env
+DB_DATABASE=db_pelanggaran_siwa
+DB_USERNAME=root
+DB_PASSWORD=
+
+# 6. Migrasi & seed database
+php artisan migrate --seed
+
+# 7. Jalankan server
+php artisan serve
+```
+
+Akses aplikasi di: `http://127.0.0.1:8000`
+
+---
+
+## 🔐 Akun Demo
+
+| Role | Username | Password |
+|------|----------|----------|
+| Admin | `admin` | `admin123` |
+| Kepala Sekolah | `danis` | `danis123` |
+| Kesiswaan | `dini` | `dini123` |
+| Guru BK | `ridwan` | `ridwan123` |
+| Wali Kelas | `suhendar` | `suhendar123` |
+| Guru | `asep` | `asep123` |
+| Orang Tua | `iman` | `iman123` |
+| Siswa | `gathan` | `gathan123` |
+
+---
+
+## 📁 Struktur Modul
+
+```
+├── Data Master
+│   ├── Manajemen User
+│   ├── Data Siswa
+│   ├── Data Guru
+│   ├── Data Kelas
+│   ├── Data Wali Kelas
+│   ├── Data Jurusan
+│   ├── Data Orang Tua
+│   └── Tahun Ajaran
+├── Jenis & Kategori
+│   ├── Jenis Pelanggaran
+│   ├── Kategori Pelanggaran
+│   ├── Jenis Prestasi
+│   └── Jenis Sanksi
+├── Pelanggaran & Sanksi
+│   ├── Data Pelanggaran
+│   ├── Data Sanksi
+│   └── Pelaksanaan Sanksi
+├── Prestasi
+├── Konseling (BK)
+├── Verifikasi Data
+├── Laporan (PDF & Excel)
+├── Monitoring All Data
+└── System Backup
+```
+
+---
+
+## 👤 Developer
+
+**Muhammad Gathan Prayoga**  
+NIS: 232417070055  
+XII PPLG 1 — SMK Bakti Nusantara 666  
+📍 Jl. Raya Percobaan No.65, Cileunyi, Kabupaten Bandung, Jawa Barat
+
+---
+
+## 📄 Lisensi
+
+Project ini dibuat untuk keperluan **Ujian Kompetensi Kejuruan (UKK) 2025**.
